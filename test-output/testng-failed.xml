@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Extent Parallel Test]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="ExtentWithParallelClasses(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pulse.Test.ValidLogin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="TC2" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+          <include name="TC1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin -->
+      <class name="com.pulse.Test.ValidLogin2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin2 -->
+      <class name="com.pulse.Test.ValidLogin3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="testDown"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin3 -->
+    </classes>
+  </test> <!-- ExtentWithParallelClasses(failed) -->
+  <test name="ExtentWithParallelClasses1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pulse.Test.ValidLogin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin -->
+      <class name="com.pulse.Test.ValidLogin2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="TC4" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin2 -->
+      <class name="com.pulse.Test.ValidLogin3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="testDown"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin3 -->
+    </classes>
+  </test> <!-- ExtentWithParallelClasses1(failed) -->
+  <test name="ExtentWithParallelClasses3(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pulse.Test.ValidLogin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin -->
+      <class name="com.pulse.Test.ValidLogin2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin2 -->
+      <class name="com.pulse.Test.ValidLogin3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="testDown"/>
+          <include name="beforeSuite"/>
+          <include name="TC6" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.pulse.Test.ValidLogin3 -->
+    </classes>
+  </test> <!-- ExtentWithParallelClasses3(failed) -->
+</suite> <!-- Failed suite [Extent Parallel Test] -->
